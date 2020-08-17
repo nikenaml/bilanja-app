@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_explore_gambar_activity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E5E6"
+    tools:ignore="NamespaceTypo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <FrameLayout
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/photo_profile"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    tools:src="@color/colorAccent"
+                    android:src="@drawable/logohelp"/>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_item_nama"
+                android:paddingLeft="8dp"
+                android:text="@string/nama_apk"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_item_asal"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:text="@string/asal_apk"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_item_credit"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="6dp"
+                android:textColor="#de6161"
+                android:textStyle="bold"
+                android:text="@string/credit_apk_help"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_item_isi"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="6dp"
+                android:text="@string/penggunaan_apk_help"
+                android:scrollbars="vertical"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="6dp"
+                android:textColor="#2c3e50"
+                android:textStyle="bold"
+                android:text="@string/socmed_apk"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

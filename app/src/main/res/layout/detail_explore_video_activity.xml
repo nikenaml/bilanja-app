@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="270dp" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:onClick="VideoPlay"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_item_nama"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:text="@string/nama_video"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_item_asal"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:text="@string/asal_video"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_item_isi"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="6dp"
+        android:text="@string/isi_video"
+        android:textSize="12dp" />
+
+</LinearLayout>
